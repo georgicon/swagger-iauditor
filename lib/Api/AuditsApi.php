@@ -112,7 +112,7 @@ class AuditsApi
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of null, HTTP status code, HTTP response headers (array of strings)
+     * @return array of null, HTTP status code, HTTP response headers (array of strings), HTTP response body content
      */
     public function auditsAuditIdDeepLinkPostWithHttpInfo($audit_id)
     {
@@ -147,7 +147,7 @@ class AuditsApi
                 );
             }
 
-            return [null, $statusCode, $response->getHeaders()];
+            return [null, $statusCode, $response->getHeaders(), $response->getBody()->getContents()];
 
         } catch (ApiException $e) {
             switch ($e->getCode()) {
@@ -343,7 +343,7 @@ class AuditsApi
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of null, HTTP status code, HTTP response headers (array of strings)
+     * @return array of null, HTTP status code, HTTP response headers (array of strings), HTTP response body content
      */
     public function auditsAuditIdExportPostWithHttpInfo($audit_id, $format, $timezone = null, $export_profile = null)
     {
@@ -378,7 +378,7 @@ class AuditsApi
                 );
             }
 
-            return [null, $statusCode, $response->getHeaders()];
+            return [null, $statusCode, $response->getHeaders(), $response->getBody()->getContents()];
 
         } catch (ApiException $e) {
             switch ($e->getCode()) {
@@ -599,7 +599,7 @@ class AuditsApi
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of null, HTTP status code, HTTP response headers (array of strings)
+     * @return array of null, HTTP status code, HTTP response headers (array of strings), HTTP response body content
      */
     public function auditsAuditIdExportsExportIdFilenameGetWithHttpInfo($audit_id, $export_id, $filename)
     {
@@ -634,7 +634,7 @@ class AuditsApi
                 );
             }
 
-            return [null, $statusCode, $response->getHeaders()];
+            return [null, $statusCode, $response->getHeaders(), $response->getBody()->getContents()];
 
         } catch (ApiException $e) {
             switch ($e->getCode()) {
@@ -860,7 +860,7 @@ class AuditsApi
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of null, HTTP status code, HTTP response headers (array of strings)
+     * @return array of null, HTTP status code, HTTP response headers (array of strings), HTTP response body content
      */
     public function auditsAuditIdExportsExportIdGetWithHttpInfo($audit_id, $export_id)
     {
@@ -895,7 +895,7 @@ class AuditsApi
                 );
             }
 
-            return [null, $statusCode, $response->getHeaders()];
+            return [null, $statusCode, $response->getHeaders(), $response->getBody()->getContents()];
 
         } catch (ApiException $e) {
             switch ($e->getCode()) {
@@ -1102,7 +1102,7 @@ class AuditsApi
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of null, HTTP status code, HTTP response headers (array of strings)
+     * @return array of null, HTTP status code, HTTP response headers (array of strings), HTTP response body content
      */
     public function auditsAuditIdGetWithHttpInfo($audit_id)
     {
@@ -1137,7 +1137,7 @@ class AuditsApi
                 );
             }
 
-            return [null, $statusCode, $response->getHeaders()];
+            return [null, $statusCode, $response->getHeaders(), $response->getBody()->getContents()];
 
         } catch (ApiException $e) {
             switch ($e->getCode()) {
@@ -1329,7 +1329,7 @@ class AuditsApi
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of null, HTTP status code, HTTP response headers (array of strings)
+     * @return array of null, HTTP status code, HTTP response headers (array of strings), HTTP response body content
      */
     public function auditsAuditIdMediaMediaIdGetWithHttpInfo($audit_id, $media_id)
     {
@@ -1364,7 +1364,7 @@ class AuditsApi
                 );
             }
 
-            return [null, $statusCode, $response->getHeaders()];
+            return [null, $statusCode, $response->getHeaders(), $response->getBody()->getContents()];
 
         } catch (ApiException $e) {
             switch ($e->getCode()) {
@@ -1573,7 +1573,7 @@ class AuditsApi
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of null, HTTP status code, HTTP response headers (array of strings)
+     * @return array of null, HTTP status code, HTTP response headers (array of strings), HTTP response body content
      */
     public function auditsAuditIdPutWithHttpInfo($audit_id, $header_items_items_archived_model = null)
     {
@@ -1608,7 +1608,7 @@ class AuditsApi
                 );
             }
 
-            return [null, $statusCode, $response->getHeaders()];
+            return [null, $statusCode, $response->getHeaders(), $response->getBody()->getContents()];
 
         } catch (ApiException $e) {
             switch ($e->getCode()) {
@@ -1806,7 +1806,7 @@ class AuditsApi
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of null, HTTP status code, HTTP response headers (array of strings)
+     * @return array of null, HTTP status code, HTTP response headers (array of strings), HTTP response body content
      */
     public function auditsAuditIdSharePostWithHttpInfo($audit_id, $shares_model)
     {
@@ -1841,7 +1841,7 @@ class AuditsApi
                 );
             }
 
-            return [null, $statusCode, $response->getHeaders()];
+            return [null, $statusCode, $response->getHeaders(), $response->getBody()->getContents()];
 
         } catch (ApiException $e) {
             switch ($e->getCode()) {
@@ -2043,7 +2043,7 @@ class AuditsApi
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of null, HTTP status code, HTTP response headers (array of strings)
+     * @return array of null, HTTP status code, HTTP response headers (array of strings), HTTP response body content
      */
     public function auditsAuditIdWebReportLinkDeleteWithHttpInfo($audit_id)
     {
@@ -2078,7 +2078,7 @@ class AuditsApi
                 );
             }
 
-            return [null, $statusCode, $response->getHeaders()];
+            return [null, $statusCode, $response->getHeaders(), $response->getBody()->getContents()];
 
         } catch (ApiException $e) {
             switch ($e->getCode()) {
@@ -2268,7 +2268,7 @@ class AuditsApi
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of null, HTTP status code, HTTP response headers (array of strings)
+     * @return array of null, HTTP status code, HTTP response headers (array of strings), HTTP response body content
      */
     public function auditsAuditIdWebReportLinkGetWithHttpInfo($audit_id)
     {
@@ -2303,7 +2303,7 @@ class AuditsApi
                 );
             }
 
-            return [null, $statusCode, $response->getHeaders()];
+            return [null, $statusCode, $response->getHeaders(), $response->getBody()->getContents()];
 
         } catch (ApiException $e) {
             switch ($e->getCode()) {
@@ -2491,7 +2491,7 @@ class AuditsApi
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of null, HTTP status code, HTTP response headers (array of strings)
+     * @return array of null, HTTP status code, HTTP response headers (array of strings), HTTP response body content
      */
     public function auditsPostWithHttpInfo()
     {
@@ -2526,7 +2526,7 @@ class AuditsApi
                 );
             }
 
-            return [null, $statusCode, $response->getHeaders()];
+            return [null, $statusCode, $response->getHeaders(), $response->getBody()->getContents()];
 
         } catch (ApiException $e) {
             switch ($e->getCode()) {
@@ -2715,7 +2715,7 @@ class AuditsApi
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of null, HTTP status code, HTTP response headers (array of strings)
+     * @return array of null, HTTP status code, HTTP response headers (array of strings), HTTP response body content
      */
     public function auditsSearchGetWithHttpInfo($field = null, $order = 'asc', $modified_after = null, $modified_before = null, $template = null, $archived = 'false', $completed = 'both', $owner = 'all', $limit = '1000')
     {
@@ -2750,7 +2750,7 @@ class AuditsApi
                 );
             }
 
-            return [null, $statusCode, $response->getHeaders()];
+            return [null, $statusCode, $response->getHeaders(), $response->getBody()->getContents()];
 
         } catch (ApiException $e) {
             switch ($e->getCode()) {
